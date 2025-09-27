@@ -1,0 +1,40 @@
+{
+    "layer": "top",
+    "modules-left": ["niri/workspaces", "niri/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "battery", "cpu", "memory", "network", "pulseaudio"],
+    "pulseaudio": {
+    	"format": "  {volume}%",
+		"on-click": "pavucontrol"
+    },
+    "niri/workspaces": {
+      "format": "{index}"
+    },
+    "clock": {
+        "format": "{:%d %b %H:%M}",
+        "interval": 1,
+        "tooltip-format": "{:%A %d %B %Y}"
+    },
+    "tray": {
+    	"spacing": 12
+    },
+    "memory": {
+        "format": "  {percentage}%",
+        "interval": 5
+    },
+    "cpu": {
+        "format": "  {usage}%",
+        "interval": 5
+    },
+    "battery": {
+    	"format": "{icon} {capacity}%",
+    	"format-charging": "{icon} {capacity}% ",
+    	"format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    	"interval": 10
+    },
+    "network": {
+    	"format-ethernet": "󰈀 {ifname}",
+	"format-wifi": "  {essid} ({signalStrength}%)",
+	"interval": 10
+    }
+}

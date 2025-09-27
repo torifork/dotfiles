@@ -1,0 +1,73 @@
+window#waybar {
+	background-color: rgba(17, 17, 21, 1);
+	color: #cdd6f4;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
+
+* {
+	font-family: "MonaspiceNe Nerd Font";
+	font-size: 10pt;
+}
+
+#workspaces button {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: transparent;
+	border-radius: 100%;
+	border: 6px #f5c2e7;
+	font-weight: 800;
+	color: #7e86a7; 
+}
+
+#workspaces button.urgent {
+	color: #fab387;
+}
+
+#workspaces button:hover {
+	background: rgba(69, 71, 90, 0.65);
+	color: #cdd6f4;
+	border: 12px #f5c2e7;
+	transition: none;
+}
+
+#workspaces button.focused {
+	color: #cdd6f4;
+	border: 12px #f5c2e7;
+}
+
+label.module {
+	padding: 0 10px 0 10px;
+}
+
+box.module button:hover {
+	box-shadow: none;
+	outline: none;
+	font-style: normal;
+	text-shadow: none;
+}
+
+#tray {
+	padding: 0 8 0 8;
+}
+
+menu {
+	background-color: #111115;
+	color: #cdd6f4;
+	border: 1px solid #494d64;
+	padding: 6px;
+	border-radius: 0px; /* ROUNDING (8px) */
+}
+
+#tray menu menuitem:hover {
+	background-color: #45475a;
+	color: #cdd6f4;
+	border-radius: 5px; /* ROUNDING (5px) */
+}
+
+#window {
+	font-weight: 800;
+	padding: 0px 8px 0px 8px;
+}
