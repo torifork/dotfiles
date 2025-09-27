@@ -265,9 +265,8 @@ environment {
     QT_QPA_PLATFORM "wayland"
     SDL_VIDEODRIVER "wayland"
     CLUTTER_BACKEND "wayland"
-    QT_QPA_PLATFORMTHEME "gtk3"
-    QT_QPA_PLATFORMTHEME_QT6 "gtk3"
     TERMINAL "/usr/bin/alacritty"
+    EDITOR "nvim"
 }
 // Add lines like this to spawn processes at startup.
 // Note that running niri as a session supports xdg-desktop-autostart,
