@@ -24,6 +24,11 @@ For secure boot (might not exist at some point so you can refer to the arch wiki
 https://www.reddit.com/r/voidlinux/comments/182m6k0/guide_setting_up_secure_boot/
 ```
 
+For warmer colors at night:
+```
+wlsunset
+```
+
 
 Important for dark mode:
 ```
