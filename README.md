@@ -6,7 +6,7 @@ only for myself for using niri on void linux.
 
 Packages required (for my niri config): 
 ```
-niri fuzzel alacritty base-devel nerd-fonts Waybar xwayland-satellite xdg-desktop-portal-gnome gnome-keyring polkit-gnome pavucontrol mako swaylock swayidle swaybg nautilus gvfs cliphist wl-clipboard
+niri fuzzel alacritty base-devel nerd-fonts Waybar xwayland-satellite xdg-desktop-portal-gnome gnome-keyring polkit-gnome pavucontrol mako swaylock swayidle swaybg nautilus gvfs cliphist wl-clipboard zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting
 ```
 
 Other important packages (not just for niri): 

@@ -293,7 +293,9 @@ screenshot-path null
 animations {
 
 }
-window-rule {
+
+
+window-rule { // transparency
     match is-active=false
     opacity 0.9	
 }
