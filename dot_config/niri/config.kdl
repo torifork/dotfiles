@@ -293,6 +293,11 @@ screenshot-path null
 animations {
 
 }
+window-rule {
+    match is-active=false
+    opacity 0.9	
+}
+
 
 
 window-rule { // opening in floating
