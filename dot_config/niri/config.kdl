@@ -262,12 +262,9 @@ cursor {
 }
 
 environment {
-    QT_QPA_PLATFORM "wayland"
-    SDL_VIDEODRIVER "wayland"
-    CLUTTER_BACKEND "wayland"
     QT_QPA_PLATFORMTHEME "gtk3"
     TERMINAL "/usr/bin/alacritty"
-    EDITOR "nvim"
+    EDITOR "/usr/bin/nvim"
 }
 
 spawn-at-startup "swaybg" "-i" ".config/background/background.png"
