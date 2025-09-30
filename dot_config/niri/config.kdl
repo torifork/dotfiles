@@ -107,7 +107,7 @@ output "DP-1" {     // EDIT HERE
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 8
+    gaps 12
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -155,7 +155,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 2
+        width 3
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -294,7 +294,7 @@ animations {
 
 window-rule { // transparency
     match is-active=false
-    opacity 0.9	
+    opacity 0.85
 }
 
 

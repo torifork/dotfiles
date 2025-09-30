@@ -49,14 +49,14 @@ box.module button:hover {
 	text-shadow: none;
 }
 
-#tray {
+tray {
 	padding: 0 8 0 8;
 }
 
 menu {
 	background-color: #111115;
 	color: #cdd6f4;
-	border: 1px solid #494d64;
+	border: 2px solid #494d64;
 	padding: 6px;
 	border-radius: 0px; /* ROUNDING (8px) */
 }
