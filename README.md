@@ -1,17 +1,11 @@
-only for myself for using niri on void linux.
-
-
-
-
-
 Packages required (for my niri config): 
 ```
-niri fuzzel alacritty base-devel nerd-fonts Waybar xwayland-satellite xdg-desktop-portal-gnome gnome-keyring polkit-gnome pavucontrol mako swaylock swayidle swaybg nautilus gvfs cliphist wl-clipboard zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting
+niri fuzzel alacritty base-devel waybar xwayland-satellite xdg-desktop-portal-gnome gnome-keyring mate-polkit pavucontrol mako swaylock swayidle swaybg nautilus cliphist wl-clipboard zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting starship ttf-jetbrains-mono ttf-jetbrains-mono-nerd wlsunset
 ```
 
 Other important packages (not just for niri): 
 ```
-pipewire elogind polkit NetworkManager noto-fonts-ttf noto-fonts-emoji noto-fonts-cjk qView neovim qt6-wayland qt5-wayland
+pipewire pipewire-pulse pipewire-jack pipewire-alsa noto-fonts noto-fonts-emoji noto-fonts-cjk
 ```
 
 For a simple greeter:
@@ -19,22 +13,10 @@ For a simple greeter:
 greetd tuigreet
 ```
 
-For secure boot (might not exist at some point so you can refer to the arch wiki): 
-```
-https://www.reddit.com/r/voidlinux/comments/182m6k0/guide_setting_up_secure_boot/
-```
-
-For warmer colors at night:
-```
-wlsunset
-```
-
-
 Important for dark mode:
 ```
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 ```
 
-For printing just check void docs
 
 

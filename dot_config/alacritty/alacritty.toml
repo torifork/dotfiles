@@ -19,9 +19,3 @@ style = "Regular"
 
 [window]
 opacity = 0.97
-
-[terminal]
-
-[terminal.shell]
-program = "zsh"
-args = ["--login"]

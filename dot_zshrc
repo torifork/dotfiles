@@ -1,4 +1,7 @@
-alias chezmoi=~/.local/bin/chezmoi
+export EDITOR="/bin/nvim"
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 
 autoload -Uz compinit
 compinit
