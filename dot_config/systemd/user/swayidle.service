@@ -4,5 +4,5 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/swayidle -w timeout 601 'niri msg action power-off-monitors' timeout 600 'swaylock -f -i %h/.config/background/background-blurred.png --indicator-idle-visible' before-sleep 'swaylock -f -i %h/.config/background/background-blurred.png --indicator-idle-visible' timeout 900 'systemctl suspend'
+ExecStart=/usr/bin/swayidle -w timeout 601 'niri msg action power-off-monitors' timeout 600 'swaylock' before-sleep 'swaylock' timeout 900 'systemctl suspend'
 Restart=on-failure

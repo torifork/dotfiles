@@ -2,13 +2,13 @@
     "layer": "top",
     "modules-left": ["niri/workspaces", "niri/window"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "battery", "cpu", "memory", "network", "pulseaudio"],
+    "modules-right": ["tray", "network", "pulseaudio", "battery", "custom/powermenu"],
     "pulseaudio": {
     	"format": "  {volume}%",
 		"on-click": "pavucontrol"
     },
     "niri/workspaces": {
-      "format": "{index}"
+	"format": "{index}"
     },
     "clock": {
         "format": "{:%d %b %H:%M}",
@@ -18,14 +18,6 @@
     "tray": {
     	"spacing": 12
     },
-    "memory": {
-        "format": "  {percentage}%",
-        "interval": 5
-    },
-    "cpu": {
-        "format": "  {usage}%",
-        "interval": 5
-    },
     "battery": {
     	"format": "{icon} {capacity}%",
     	"format-charging": "{icon} {capacity}% ",
@@ -33,8 +25,12 @@
     	"interval": 10
     },
     "network": {
-    	"format-ethernet": "󰈀 {ifname}",
-	"format-wifi": "  {essid} ({signalStrength}%)",
+    	"format-ethernet": " 󰈀 {ifname}",
+	"format-wifi": "   {essid} ({signalStrength}%)",
 	"interval": 10
+    },
+    "custom/powermenu": {
+	"format": " ",
+    		"on-click": "sh -c '~/.config/scripts/fuzzel-powermenu.sh'"
     }
 }
