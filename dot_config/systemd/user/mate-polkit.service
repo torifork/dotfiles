@@ -6,3 +6,4 @@ Requisite=graphical-session.target
 [Service]
 ExecStart=/usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 Restart=on-failure
+

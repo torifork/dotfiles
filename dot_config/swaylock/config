@@ -1,3 +1,5 @@
+ignore-empty-password
 daemonize
-image=~/.config/background/background-blurred.png
+image=~/wallpapers/kde_mountain-blurred.png
 indicator-idle-visible
+

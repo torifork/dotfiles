@@ -4,5 +4,5 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/swaybg -i "%h/.config/background/background.png"
+ExecStart=/usr/bin/swaybg -i "%h/wallpapers/kde_mountain.png"
 Restart=on-failure

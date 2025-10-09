@@ -4,6 +4,6 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/wl-paste --watch cliphist store && cliphist wipe
+ExecStart=/usr/bin/swayosd-server
 Restart=on-failure
 

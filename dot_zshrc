@@ -1,4 +1,5 @@
-export EDITOR="/bin/nvim"
+export EDITOR="/usr/bin/nvim"
+export TERMINAL="/usr/bin/alacritty"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
