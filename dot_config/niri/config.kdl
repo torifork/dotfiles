@@ -171,6 +171,7 @@ spawn-at-startup "pipewire"
 spawn-at-startup "wireplumber"
 spawn-at-startup "pipewire-pulse"
 
+spawn-at-startup "cliphist" "wipe"
 spawn-at-startup "wl-paste" "-w" "cliphist" "store"
 spawn-at-startup "mako"
 spawn-at-startup "waybar"
