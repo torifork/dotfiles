@@ -1,0 +1,17 @@
+font=JetBrains Normal 12
+
+timeout=10000
+
+background-color=#202020
+text-color=#ddc7a1
+border-color=#7daea3
+
+[urgency=low]
+background-color=#202020
+text-color=#d8a657
+border-color=#7daea3
+
+[urgency=high]
+background-color=#202020
+text-color=#e78a4e
+border-color=#7daea3

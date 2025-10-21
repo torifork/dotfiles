@@ -80,6 +80,12 @@ output "DP-1" {
     // position x=1280 y=0
 }
 
+output "InfoVision Optoelectronics (Kunshan) Co.,Ltd China 0x057D Unknown" {
+    scale 1
+    mode "1920x1080@60.010"
+    transform "normal"
+}
+
 layout {
     gaps 4
 
@@ -149,6 +155,10 @@ layout {
     }
 }
 
+environment {
+    TERMINAL "/bin/alacritty"
+}
+
 hotkey-overlay {
     skip-at-startup
 }
@@ -162,9 +172,10 @@ spawn-at-startup "wireplumber"
 spawn-at-startup "pipewire-pulse"
 
 spawn-at-startup "wl-paste" "-w" "cliphist" "store"
+spawn-at-startup "mako"
 spawn-at-startup "waybar"
-spawn-at-startup "swaybg" "-i" "wallpapers/mountain.png"
-spawn-at-startup "swayidle"
+spawn-at-startup "swaybg" "-i" "wallpapers/leaves-4.png" "-m" "fill"
+spawn-at-startup "swayidle" "-w" "timeout" "601" "niri msg action power-off-monitors" "timeout" "600" "swaylock" "timeout" "900" "loginctl suspend" "before-sleep" "swaylock"
 spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1"
 
 animations {

@@ -32,7 +32,8 @@
 		"tooltip-format": "<big>{:%Y-%m-%d}</big>\n<tt><small>{calendar}</small></tt>"
 	},
 	"backlight": {
-		"format": "{icon}",
+		"scroll-step": 5,
+		"format": "{icon} {percent}%",
 		"tooltip-format": "{percent}%",
 		"format-icons": [
 			"",
@@ -51,9 +52,9 @@
 			"warning": 30,
 			"critical": 15
 		},
-		"format": "{icon}",
-		"format-charging": "{icon}󱐋",
-		"format-plugged": "{icon}",
+		"format": "{icon} {capacity}%",
+		"format-charging": "{icon} 󱐋{capacity}%",
+		"format-plugged": "{icon} {capacity}%",
 		"tooltip-format": "{capacity}% | {timeTo}",
 		"format-icons": [
 			"󰂎",
@@ -91,8 +92,8 @@
 	"wireplumber": {
 		"tooltip-format": " {node_name}: {volume}% \n {source_desc}: {source_volume}%",
 		"scroll-step": 5,
-		"format": "{icon}",
-		"format-muted": "",
+		"format": "{icon} {volume}%" ,
+		"format-muted": " {volume}%",
 		"format-icons": [
 			"",
 			"",

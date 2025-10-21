@@ -18,7 +18,7 @@ family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [window]
-opacity = 0.97
+opacity = 1
 
 [colors.primary]
 background = '0x202020'
