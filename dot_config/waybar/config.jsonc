@@ -6,8 +6,7 @@
 		"niri/window"
 	],
 	"modules-center": [
-		"clock",
-		"custom/notification"
+		"clock"
 	],
 	"modules-right": [
 		"tray",
@@ -17,7 +16,6 @@
 		"network",
 		"backlight",
 		"wireplumber",
-		"power-profiles-daemon",
 		"battery"
 	],
 	"idle_inhibitor": {
@@ -70,8 +68,8 @@
 			"󰂂",
 			"󰁹"
 		],
-		"on-scroll-up": "swayosd-client --brightness raise",
-		"on-scroll-down": "swayosd-client --brightness lower"
+		"on-scroll-up": "brightnessctl set +5%",
+		"on-scroll-down": "brighntessctl set 5%-"
 	},
 	"network": {
 		"format-wifi": "",
@@ -88,7 +86,7 @@
 		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-		"on-click": "blueberry"
+		"on-click": "blueman-manager"
 	},
 	"wireplumber": {
 		"tooltip-format": " {node_name}: {volume}% \n {source_desc}: {source_volume}%",
@@ -101,20 +99,7 @@
 			"",
 			""
 		],
-		"on-scroll-up": "swayosd-client --output-volume raise",
-		"on-scroll-down": "swayosd-client --output-volume lower",
-		"on-click": "pwvucontrol" //,
-	},
-	"power-profiles-daemon": {
-		"format": "{icon}",
-		"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-		"tooltip": true,
-		"format-icons": {
-			"default": "",
-			"performance": "",
-			"balanced": "",
-			"power-saver": ""
-		}
+		"on-click": "pavucontrol"
 	},
 	"privacy": {
 		"icon-spacing": 8,
@@ -135,25 +120,5 @@
 	},
 	"niri/window": {
 		"format": "{app_id}"
-	},
-	"custom/notification": {
-		"tooltip": false,
-		"format": "{icon}",
-		"format-icons": {
-			"notification": "󱅫",
-			"none": "",
-			"dnd-notification": "",
-			"dnd-none": "󰂛",
-			"inhibited-notification": "󰅸",
-			"inhibited-none": "",
-			"dnd-inhibited-notification": "",
-			"dnd-inhibited-none": ""
-		},
-		"return-type": "json",
-		"exec-if": "which swaync-client",
-		"exec": "swaync-client -swb",
-		"on-click": "sleep 0.1 && swaync-client -t -sw",
-		"on-click-right": "sleep 0.1 && swaync-client -d -sw",
-		"escape": true
 	}
 }

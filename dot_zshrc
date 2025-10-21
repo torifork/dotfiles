@@ -1,8 +1,8 @@
-export EDITOR="/usr/bin/nvim"
-export TERMINAL="/usr/bin/alacritty"
-
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
+export TERMINAL=/bin/alacritty
+export EDITOR=/bin/nvim
 
 autoload -Uz compinit
 compinit
