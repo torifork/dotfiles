@@ -1,6 +1,6 @@
 font=JetBrains Normal 12
 
-timeout=10000
+default-timeout=10000
 
 background-color=#202020
 text-color=#ddc7a1
