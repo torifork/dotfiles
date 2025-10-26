@@ -157,6 +157,7 @@ layout {
 
 environment {
     TERMINAL "/bin/alacritty"
+    QT_QPA_PLATFORMTHEME "gtk3" 
 }
 
 hotkey-overlay {
