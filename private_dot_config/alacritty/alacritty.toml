@@ -1,0 +1,17 @@
+[general]
+import = ["themes/noctalia.toml"]
+
+[window]
+
+opacity = 0.9
+
+padding.x = 10
+padding.y = 10
+
+[font]
+normal.family = "JetBrainsMono Nerd Font Propo"
+bold.family = "JetBrainsMono Nerd Font Propo"
+italic.family = "JetBrainsMono Nerd Font Propo"
+bold_italic.family = "JetBrainsMono Nerd Font Propo"
+
+size = 12.0
