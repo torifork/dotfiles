@@ -3,7 +3,7 @@ import = ["themes/noctalia.toml"]
 
 [window]
 
-opacity = 0.9
+opacity = 1
 
 padding.x = 10
 padding.y = 10

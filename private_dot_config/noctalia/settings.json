@@ -48,13 +48,6 @@
             ],
             "left": [
                 {
-                    "colorizeDistroLogo": true,
-                    "customIconPath": "",
-                    "icon": "",
-                    "id": "ControlCenter",
-                    "useDistroLogo": true
-                },
-                {
                     "diskPath": "/",
                     "id": "SystemMonitor",
                     "showCpuTemp": true,
@@ -90,6 +83,9 @@
             ],
             "right": [
                 {
+                    "id": "ScreenRecorder"
+                },
+                {
                     "blacklist": [
                     ],
                     "colorizeIcons": false,
@@ -99,7 +95,8 @@
                     ]
                 },
                 {
-                    "id": "ScreenRecorder"
+                    "displayMode": "onhover",
+                    "id": "Volume"
                 },
                 {
                     "hideWhenZero": true,
@@ -108,19 +105,24 @@
                 },
                 {
                     "displayMode": "onhover",
-                    "id": "Volume"
-                },
-                {
-                    "displayMode": "onhover",
                     "id": "Brightness"
                 },
                 {
                     "customFont": "",
-                    "formatHorizontal": "HH:mm ddd, MMM dd",
+                    "formatHorizontal": "HH:mm ddd \\nMMM dd",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
                     "useCustomFont": false,
                     "usePrimaryColor": true
+                },
+                {
+                    "colorizeDistroLogo": false,
+                    "colorizeSystemIcon": "none",
+                    "customIconPath": "",
+                    "enableColorization": false,
+                    "icon": "",
+                    "id": "ControlCenter",
+                    "useDistroLogo": false
                 }
             ]
         }
@@ -134,11 +136,11 @@
         "cards": [
             {
                 "enabled": true,
-                "id": "banner-card"
+                "id": "calendar-header-card"
             },
             {
                 "enabled": true,
-                "id": "calendar-card"
+                "id": "calendar-month-card"
             },
             {
                 "enabled": true,
@@ -238,9 +240,9 @@
         "animationSpeed": 1,
         "avatarImage": "/home/jonass/.face",
         "compactLockScreen": false,
-        "dimmerOpacity": 0.6,
+        "dimmerOpacity": 0,
         "enableShadows": false,
-        "forceBlackScreenCorners": false,
+        "forceBlackScreenCorners": true,
         "language": "",
         "lockOnSuspend": true,
         "radiusRatio": 1,
@@ -250,7 +252,7 @@
         "shadowOffsetX": 2,
         "shadowOffsetY": 3,
         "showHibernateOnLockScreen": false,
-        "showScreenCorners": false
+        "showScreenCorners": true
     },
     "hooks": {
         "darkModeChange": "",
@@ -260,7 +262,7 @@
     "location": {
         "analogClockInCalendar": false,
         "firstDayOfWeek": -1,
-        "name": "Klaipeda",
+        "name": "Klaipėda",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": false,
@@ -334,7 +336,7 @@
             {
                 "action": "hibernate",
                 "countdownEnabled": true,
-                "enabled": true
+                "enabled": false
             },
             {
                 "action": "reboot",
@@ -354,16 +356,21 @@
         ],
         "showHeader": true
     },
-    "settingsVersion": 25,
+    "settingsVersion": 26,
     "systemMonitor": {
         "cpuCriticalThreshold": 90,
+        "cpuPollingInterval": 3000,
         "cpuWarningThreshold": 80,
         "criticalColor": "",
         "diskCriticalThreshold": 90,
+        "diskPollingInterval": 3000,
         "diskWarningThreshold": 80,
         "memCriticalThreshold": 90,
+        "memPollingInterval": 3000,
         "memWarningThreshold": 80,
+        "networkPollingInterval": 3000,
         "tempCriticalThreshold": 90,
+        "tempPollingInterval": 3000,
         "tempWarningThreshold": 80,
         "useCustomColors": false,
         "warningColor": ""
@@ -373,6 +380,7 @@
         "cava": true,
         "code": false,
         "discord": false,
+        "emacs": false,
         "enableUserTemplates": false,
         "foot": false,
         "fuzzel": true,
@@ -380,6 +388,7 @@
         "gtk": true,
         "kcolorscheme": false,
         "kitty": false,
+        "niri": true,
         "pywalfox": false,
         "qt": true,
         "spicetify": false,
@@ -389,7 +398,7 @@
         "wezterm": false
     },
     "ui": {
-        "fontDefault": "Inter Variable",
+        "fontDefault": "Inter",
         "fontDefaultScale": 1,
         "fontFixed": "JetBrainsMono Nerd Font Propo",
         "fontFixedScale": 1,
@@ -399,14 +408,13 @@
         "tooltipsEnabled": true
     },
     "wallpaper": {
-        "defaultWallpaper": "",
         "directory": "/home/jonass/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "fillColor": "#000000",
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
-        "monitors": [
+        "monitorDirectories": [
         ],
         "overviewEnabled": false,
         "panelPosition": "follow_bar",
