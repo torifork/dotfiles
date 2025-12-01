@@ -231,7 +231,6 @@
         "onlySameOutput": true,
         "pinnedApps": [
         ],
-        "radiusRatio": 0.1,
         "size": 1
     },
     "general": {
@@ -383,7 +382,7 @@
         "emacs": false,
         "enableUserTemplates": false,
         "foot": false,
-        "fuzzel": true,
+        "fuzzel": false,
         "ghostty": false,
         "gtk": true,
         "kcolorscheme": false,
@@ -398,7 +397,7 @@
         "wezterm": false
     },
     "ui": {
-        "fontDefault": "Inter",
+        "fontDefault": "Noto Sans",
         "fontDefaultScale": 1,
         "fontFixed": "JetBrainsMono Nerd Font Propo",
         "fontFixedScale": 1,
