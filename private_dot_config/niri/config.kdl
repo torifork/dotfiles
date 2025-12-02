@@ -148,6 +148,9 @@ gestures {
 	off
     }
 }
+spawn-at-startup "pipewire"
+spawn-at-startup "wireplumber"
+spawn-at-startup "pipewire-pulse"
 spawn-at-startup "/usr/libexec/polkit-kde-authentication-agent-1"
 spawn-at-startup "qs" "-c" "noctalia-shell"
 
