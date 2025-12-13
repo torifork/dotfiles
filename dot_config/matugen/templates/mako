@@ -1,0 +1,13 @@
+background-color={{colors.background.default.hex}}
+text-color={{colors.on_surface.default.hex}}
+border-color={{colors.tertiary.default.hex}}
+
+[mode=do-not-disturb]
+invisible=1
+on-notify=none
+
+[mode=silent]
+on-notify=none
+
+[urgency=high]
+border-color={{colors.error_container.default.hex}}

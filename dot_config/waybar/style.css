@@ -1,0 +1,69 @@
+@import "colors.css"; 
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono NFP;
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 0;
+    color: @on_surface;
+    padding: 0 2px;
+}
+
+button {
+    box-shadow: inset 0 -2px transparent;
+}
+
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -2px @on_surface;
+}
+
+window#waybar {
+    background: @background;
+}
+
+#cpu, #memory, #temperature, #workspaces, #window, #idle_inhibitor, #pulseaudio, #network, #backlight, #battery, #clock, #tray, #custom-power {
+    background: @surface_container_high;
+    border-radius: 3px;
+    margin: 3 1px;
+    color: @on_background;
+    padding: 0 5px;
+}
+
+#workspaces button {
+    padding: 0 4px;
+    background: transparent;
+}
+
+#workspaces button.focused {
+    box-shadow: inset 0 -2px @on_surface;
+}
+
+#cpu, #memory, #temperature {
+    margin: 3 0px;
+}
+#cpu {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#memory {
+    border-radius: 0px;
+}
+#temperature {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#clock {
+    color: @primary;
+}
+
+#idle_inhibitor.activated {
+    color: @tertiary;
+}
+
+#idle_inhibitor.deactivated {
+    color: @secondary;
+}
