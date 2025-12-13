@@ -1,0 +1,15 @@
+[[ $- != *i* ]] && return
+
+export EDITOR="nvim"
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
+fpath=(path/to/zsh-completions/src $fpath)
+
+autoload -Uz compinit
+compinit
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval "$(starship init zsh)"
