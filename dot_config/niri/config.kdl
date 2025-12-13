@@ -159,6 +159,10 @@ hotkey-overlay {
     skip-at-startup
 }
 
+environment {
+    TERMINAL "foot"
+}
+
 prefer-no-csd
 
 screenshot-path null
