@@ -12,10 +12,10 @@ choice=$(printf "%s\n" "$options" | fuzzel --dmenu --prompt="Power:")
 
 case "$choice" in
   *Shutdown)
-    systemctl poweroff
+    loginctl poweroff
     ;;
   *Reboot)
-    systemctl reboot
+    loginctl reboot
     ;;
   *Logout)
     loginctl terminate-user "$USER"
@@ -25,7 +25,7 @@ case "$choice" in
     swaylock
     ;;
   *Suspend)
-    systemctl suspend
+    loginctl suspend
     ;;
   *)
     exit 0

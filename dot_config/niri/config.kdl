@@ -167,7 +167,16 @@ prefer-no-csd
 
 screenshot-path null
 
+spawn-at-startup "pipewire"
+spawn-at-startup "wireplumber"
+spawn-at-startup "pipewire-pulse"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+spawn-at-startup "waybar"
+spawn-at-startup "mako"
+spawn-at-startup "swayidle" "-w" "timeout" "600" "swaylock" "timeout" "600" "niri msg action power-off-monitors" "before-sleep" "swaylock"
+spawn-at-startup "swaybg" "-m" "fill" "-i" "Pictures/Wallpapers/pexels-rpnickson-2559941.jpg"
+spawn-at-startup "wlsunset" "-l" "55.7" "-L" "21.1"
+spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1" 
 
 animations {
     // Uncomment to turn off all animations.
@@ -181,18 +190,14 @@ window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id=r#"Firefox$"# title="^Picture-in-Picture$"
     open-floating true
 }
 
-/-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+window-rule {
+    match title="Bitwarden Password Manager"
 
     block-out-from "screen-capture"
-
-    // Use this instead if you want them visible on third-party screenshot tools.
-    // block-out-from "screencast"
 }
 
 window-rule {
