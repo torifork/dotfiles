@@ -66,6 +66,8 @@ output "DP-1" {
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
     scale 1
 
+    variable-refresh-rate on-demand=true
+
     // Transform allows to rotate the output counter-clockwise, valid values are:
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
     transform "normal"
@@ -192,6 +194,12 @@ window-rule {
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"Firefox$"# title="^Picture-in-Picture$"
     open-floating true
+}
+
+window-rule {
+    match app-id="steam_app_1174180"
+
+    variable-refresh-rate true
 }
 
 window-rule {
