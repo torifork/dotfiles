@@ -21,12 +21,12 @@ button:hover {
 }
 
 window#waybar {
-    background: @background;
+    background: @surface_dim;
 }
 
 #cpu, #memory, #temperature, #workspaces, #window, #idle_inhibitor, #pulseaudio, #network, #backlight, #battery, #clock, #tray, #custom-power {
     background: @surface_container_high;
-    border-radius: 3px;
+    border-radius: 0px;
     margin: 3 1px;
     color: @on_background;
     padding: 0 5px;

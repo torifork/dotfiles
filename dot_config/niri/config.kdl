@@ -157,6 +157,12 @@ layout {
     }
 }
 
+    gestures {
+	hot-corners {
+	    off
+	}
+    }
+
 hotkey-overlay {
     skip-at-startup
 }
@@ -203,13 +209,13 @@ window-rule {
 }
 
 window-rule {
-    match title="Bitwarden Password Manager"
+    match title="Bitwarden"
 
     block-out-from "screen-capture"
 }
 
 window-rule {
-    geometry-corner-radius 3
+    geometry-corner-radius 0
     clip-to-geometry true
 }
 
