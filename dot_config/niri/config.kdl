@@ -210,7 +210,11 @@ window-rule {
 
 window-rule {
     match title="Bitwarden"
+    block-out-from "screen-capture"
+}
 
+layer-rule {
+    match namespace="clipboard"
     block-out-from "screen-capture"
 }
 
@@ -240,7 +244,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Mod+V { spawn-sh "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy";}
+    Mod+V { spawn-sh "cliphist list | fuzzel --dmenu --minimal-lines --with-nth 2 --namespace=clipboard | cliphist decode | wl-copy";}
     Mod+Alt+B { spawn ".config/fuzzel/scripts/bg-switcher.sh";}
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
