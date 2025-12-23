@@ -24,7 +24,7 @@ window#waybar {
     background: @surface_dim;
 }
 
-#cpu, #memory, #temperature, #workspaces, #window, #idle_inhibitor, #pulseaudio, #network, #backlight, #battery, #clock, #tray, #custom-power {
+#cpu, #memory, #temperature, #bluetooth, #workspaces, #window, #idle_inhibitor, #pulseaudio, #network, #backlight, #battery, #clock, #tray, #custom-power {
     background: @surface_container_high;
     border-radius: 0px;
     margin: 3 1px;

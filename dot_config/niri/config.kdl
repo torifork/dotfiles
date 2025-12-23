@@ -169,6 +169,10 @@ hotkey-overlay {
 
 environment {
     TERMINAL "foot"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    QT_QPA_PLATFORMTHEME "gtk3"
+    QT_QPA_PLATFORMTHEME_QT6 "gtk3"
+    QT_QPA_PLATFORM "wayland"
 }
 
 prefer-no-csd
@@ -216,6 +220,11 @@ window-rule {
 layer-rule {
     match namespace="clipboard"
     block-out-from "screen-capture"
+}
+
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
 }
 
 window-rule {
