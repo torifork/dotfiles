@@ -8,7 +8,7 @@ options="\
 󰗼 Suspend
 󰏥 Cancel"
 
-choice=$(printf "%s\n" "$options" | fuzzel --dmenu --minimal-lines --prompt="Power:")
+choice=$(printf "%s\n" "$options" | fuzzel --dmenu --minimal-lines --prompt="Power: ")
 
 case "$choice" in
   *Shutdown)
