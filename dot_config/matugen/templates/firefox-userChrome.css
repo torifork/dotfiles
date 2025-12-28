@@ -1,0 +1,119 @@
+/* Matugen Template for Firefox userChrome.css */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Core Firefox theme variables */
+    --lwt-accent-color: {{colors.background.default.hex}} !important;
+    --lwt-accent-color-inactive: {{colors.background.default.hex}} !important;
+
+    --toolbar-bgcolor: {{colors.surface_variant.default.hex}} !important;
+    --toolbar-color: {{colors.on_surface.default.hex}} !important;
+
+    --toolbar-field-background-color: {{colors.surface.default.hex}} !important;
+    --toolbar-field-color: {{colors.on_surface.default.hex}} !important;
+    --toolbar-field-focus-background-color: {{colors.surface.default.hex}} !important;
+    --toolbar-field-focus-color: {{colors.on_surface.default.hex}} !important;
+
+    --tab-selected-bgcolor: {{colors.surface.default.hex}} !important;
+    --tab-selected-textcolor: {{colors.on_surface.default.hex}} !important;
+
+    --lwt-text-color: {{colors.on_surface.default.hex}} !important;
+
+    --arrowpanel-background: {{colors.surface.default.hex}} !important;
+    --arrowpanel-color: {{colors.on_surface.default.hex}} !important;
+
+    --sidebar-background-color: {{colors.background.default.hex}} !important;
+    --sidebar-text-color: {{colors.on_surface.default.hex}} !important;
+
+    --newtab-background-color: {{colors.surface.default.hex}} !important;
+    --newtab-text-primary-color: {{colors.on_surface.default.hex}} !important;
+
+    --toolbarbutton-icon-fill: {{colors.primary.default.hex}} !important;
+    --toolbarbutton-icon-fill-attention: {{colors.secondary.default.hex}} !important;
+
+    --focus-outline-color: {{colors.primary.default.hex}} !important;
+    --panel-border-color: {{colors.primary.default.hex}} !important;
+  }
+
+  /* Titlebar / window */
+  #titlebar,
+  #navigator-toolbox {
+    background-color: {{colors.background.default.hex}} !important;
+  }
+
+  /* Tabs toolbar */
+  #TabsToolbar {
+    background-color: {{colors.background.default.hex}} !important;
+  }
+
+  /* URL bar */
+  #urlbar-background {
+    background-color: {{colors.surface.default.hex}} !important;
+  }
+
+  .urlbarView-url {
+    color: {{colors.primary.default.hex}} !important;
+  }
+
+  /* Sidebar */
+  #sidebar-box,
+  #sidebar {
+    background-color: {{colors.surface.default.hex}} !important;
+    color: {{colors.on_surface.default.hex}} !important;
+  }
+
+  /* Panels (downloads, extensions, etc.) */
+  panel,
+  .panel-viewstack {
+    background-color: {{colors.surface.default.hex}} !important;
+    color: {{colors.on_surface.default.hex}} !important;
+  }
+
+  /* Toolbar buttons (active/open state) */
+  toolbar .toolbarbutton-1:not([disabled])[open] > .toolbarbutton-icon,
+  toolbar .toolbarbutton-1:not([disabled])[checked] > .toolbarbutton-icon {
+    fill: {{colors.background.default.hex}} !important;
+  }
+
+  /* Container tab colors */
+  .identity-color-blue {
+    --identity-tab-color: {{colors.tertiary.default.hex}} !important;
+    --identity-icon-color: {{colors.tertiary.default.hex}} !important;
+  }
+
+  .identity-color-turquoise {
+    --identity-tab-color: {{colors.tertiary_container.default.hex}} !important;
+    --identity-icon-color: {{colors.tertiary_container.default.hex}} !important;
+  }
+
+  .identity-color-green {
+    --identity-tab-color: {{colors.primary.default.hex}} !important;
+    --identity-icon-color: {{colors.primary.default.hex}} !important;
+  }
+
+  .identity-color-yellow {
+    --identity-tab-color: {{colors.secondary.default.hex}} !important;
+    --identity-icon-color: {{colors.secondary.default.hex}} !important;
+  }
+
+  .identity-color-orange {
+    --identity-tab-color: {{colors.error.default.hex}} !important;
+    --identity-icon-color: {{colors.error.default.hex}} !important;
+  }
+
+  .identity-color-red {
+    --identity-tab-color: {{colors.error_container.default.hex}} !important;
+    --identity-icon-color: {{colors.error_container.default.hex}} !important;
+  }
+
+  .identity-color-pink {
+    --identity-tab-color: {{colors.primary_container.default.hex}} !important;
+    --identity-icon-color: {{colors.primary_container.default.hex}} !important;
+  }
+
+  .identity-color-purple {
+    --identity-tab-color: {{colors.secondary_container.default.hex}} !important;
+    --identity-icon-color: {{colors.secondary_container.default.hex}} !important;
+  }
+}
+

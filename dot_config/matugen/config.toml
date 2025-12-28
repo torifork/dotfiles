@@ -34,3 +34,13 @@ post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings s
 [templates.gtk4]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-4.0/colors.css'
+
+#[templates.firefox-userchrome]
+#input_path = '~/.config/matugen/templates/firefox-userChrome.css'
+#output_path = '~/.cache/firefox-userchrome.css'
+#post_hook = 'cd ~/.mozilla/firefox/*-default/ && mkdir -p chrome && ln -sf ~/.cache/firefox-userchrome.css chrome/userChrome.css'
+
+[templates.pywalfox]
+input_path = '~/.config/matugen/templates/pywalfox-colors.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update'
