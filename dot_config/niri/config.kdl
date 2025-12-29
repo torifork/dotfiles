@@ -76,7 +76,7 @@ output "DP-1" {
 }
 
 layout {
-    gaps 5
+    gaps 8
 
     center-focused-column "never"
 

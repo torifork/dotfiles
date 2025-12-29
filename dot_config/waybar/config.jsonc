@@ -36,7 +36,7 @@
          "format": "{}"
     },
     "niri/window": {
-	"format": "{app_id}"
+	"format": "{title}"
     },
     "keyboard-state": {
         "numlock": true,
