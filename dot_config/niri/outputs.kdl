@@ -1,0 +1,7 @@
+output "ASUSTek COMPUTER INC VG27A R8LMQS150365" {
+    mode "2560x1440@164.999"
+
+    scale 1
+
+    transform "normal"
+}

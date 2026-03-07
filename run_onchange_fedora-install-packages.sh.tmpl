@@ -1,0 +1,10 @@
+{{ if eq .chezmoi.osRelease.defaultHostname "fedora" -}}
+#!/bin/bash
+
+{{ range .packages.dnf }}
+pkg="{{ . }}"
+if ! rpm -q "$pkg" &>/dev/null; then
+    sudo dnf install -y "$pkg"
+fi
+{{ end -}}
+{{ end -}}

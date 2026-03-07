@@ -1,0 +1,21 @@
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+
+zstyle :compinstall filename '/home/jonass/.zshrc'
+
+ZSH_PLUGIN_DIR="$HOME/.zsh/plugins"
+
+fpath=("$ZSH_PLUGIN_DIR/zsh-completions/src" $fpath)
+
+autoload -Uz compinit
+compinit
+
+source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export EDITOR=nvim
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
+
+eval "$(starship init zsh)"

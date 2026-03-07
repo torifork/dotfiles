@@ -1,0 +1,27 @@
+{{- $email := "jonass.main@proton.me" -}}
+
+data:
+  email: {{ $email | quote }}
+  packages:
+    dnf:
+      - alacritty
+      - btop
+      - fastfetch
+      - zsh
+      - git
+      - gcr
+      - google-noto-color-emoji-fonts
+      - google-noto-emoji-fonts
+      - google-noto-sans-cjk-fonts
+      - google-noto-sans-fonts
+      - google-noto-serif-cjk-fonts
+      - google-noto-serif-fonts
+      - jetbrains-mono-fonts-all
+      - neovim
+      - niri
+      - starship
+      - waybar
+      - wlsunset
+      - wl-clipboard
+      - cliphist
+      - fuzzel
