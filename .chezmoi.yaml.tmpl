@@ -4,6 +4,9 @@ data:
   email: {{ $email | quote }}
   packages:
     dnf:
+      - fontconfig
+      - tmux
+      - fzf
       - alacritty
       - btop
       - fastfetch
