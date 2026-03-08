@@ -17,5 +17,6 @@ source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export EDITOR=nvim
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
+export PATH=$PATH:~/.local/bin
 
 eval "$(starship init zsh)"
