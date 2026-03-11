@@ -63,9 +63,6 @@ button:hover {
 }
 
 #custom-gap {
-    margin: 0 5px;
-}
-
-#window {
+    margin-right: 10px;
     margin-left: 5px;
 }
