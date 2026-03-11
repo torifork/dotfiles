@@ -1,0 +1,108 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    "position": "top",
+    "height": 26,
+    // "width": 30, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "niri/workspaces",
+	"custom/gap",
+	"niri/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+	"custom/gap",
+	"bluetooth",
+        "network",
+        "pulseaudio",
+        "battery"
+    ],
+
+//    "niri/workspaces": {
+	//"format": "{icon}",
+	//"format-icons": {
+	//    "1": "1",
+	//    "2": "2",
+	//    "3": "3",
+	//    "4": "4",
+	//    "5": "5",
+	//    "6": "6",
+	//    "7": "7",
+	//    "8": "8",
+	//    "9": "9",
+	//    "10": "10"
+	//},
+
+//    },
+
+    "custom/gap": {
+	"format": "|"
+    },
+
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+	"format" : "{:L%A %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:L%d %B W%V %Y}"
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "bluetooth": {
+        "format": "",
+        "format-off": "󰂲",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂱",
+        "format-no-controller": "",
+        "tooltip-format": "Devices connected: {num_connections}"
+    },
+    "network": {
+        "format-wifi": "{icon}",
+	"format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
+	"format-ethernet": "󰈀",
+        "format-linked": "󰤫",
+        "format-disconnected": "󰤮",
+	"format-disabled": "󰤬",
+        "tooltip-format": "{ifname} via {gwaddr}"
+    },
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-muted": "󰝟",
+	"format-icons": [ "󰕿", "󰖀", "󰕾" ],
+	"icon-size": 200,
+        "on-click": ""
+    },
+    "custom/media": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    }
+}

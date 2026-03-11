@@ -10,4 +10,6 @@ environment {
     TERMINAL "alacritty"
     XCURSOR_THEME "Bibata-Modern-Ice"
     XCURSOR_SIZE "24"
+    QT_QPA_PLATFORMTHEME "gtk3"
+    XMODIFIERS "@im=fcitx"
 }

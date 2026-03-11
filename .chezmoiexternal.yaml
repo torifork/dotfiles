@@ -22,9 +22,9 @@
   stripComponents: 1
   refreshPeriod: 168h
 
-".local/share/themes/Nordic-Polar":
+".local/share/themes/Nordic":
   type: archive
-  url: "https://github.com/EliverLara/Nordic-Polar/archive/refs/heads/master.tar.gz"
+  url: "https://github.com/EliverLara/Nordic/archive/refs/heads/master.tar.gz"
   stripComponents: 1
   refreshPeriod: 720h
 

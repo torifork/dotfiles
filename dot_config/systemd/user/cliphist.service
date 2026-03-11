@@ -4,8 +4,5 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-{{ if eq .chezmoi.hostname "mars" -}}
-ExecStart=/usr/bin/swaybg -m fill -i "%h/Pictures/Wallpapers/mountains.jpg"
-{{ end -}}
+ExecStart=/usr/bin/wl-paste --watch /usr/bin/cliphist store
 Restart=on-failure
-

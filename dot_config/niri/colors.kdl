@@ -1,13 +1,13 @@
 layout {
     border {
-	active-color "#81a1c1"
+	active-color "#8fbcbb"
 
 	inactive-color "#4c566a"
 
 	urgent-color "#bf616a"
     }
     focus-ring {
-	active-color "#81a1c1"
+	active-color "#8fbcbb"
 
 	inactive-color "#4c566a"
     }
@@ -17,5 +17,5 @@ layout {
 }
 
 overview {
-    backdrop-color "#2e3440"
+    backdrop-color "#434c5e"
 }
